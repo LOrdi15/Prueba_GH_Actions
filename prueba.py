@@ -9,7 +9,14 @@ def test_subtract():
 def subtract(a, b):
     return a - b
 
+
+
+def write_to_file(filename, content):
+    with open(filename, 'w') as f:
+        f.write(content)
+
 if __name__ == "__main__":
     test_sum()
     test_subtract()
     print("Prueba exitosa")
+    write_to_file('Test_Resultado.txt', 'Prueba exitosa')
